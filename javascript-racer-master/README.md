@@ -12,7 +12,7 @@ Incrementally built up in 4 parts:
  * play the [straight road demo](http://codeincomplete.com/projects/racer/v1.straight.html)
  * play the [curves demo](http://codeincomplete.com/projects/racer/v2.curves.html)
  * play the [hills demo](http://codeincomplete.com/projects/racer/v3.hills.html)
- * play the [final version](http://codeincomplete.com/projects/racer/v4.final.html)
+ * play the [final version](https://nelsonlai1.github.io/js_racer/javascript-racer-master/v4.final.html)
 
 With detailed descriptions of how each part works:
 
