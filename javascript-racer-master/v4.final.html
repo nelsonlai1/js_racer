@@ -80,10 +80,10 @@
     Loading...
   </div>
   <!-----------------virtual button---------------------->
-  <button type="button" id="up" onmousedown="keyFaster=true" onmouseup="keyFaster=false" onmouseout="keyFaster=false"></button>
-  <button type="button" id="down" onmousedown="keySlower=true" onmouseup="keySlower=false" onmouseout="keySlower=false"></button>
-  <button type="button" id="left" onmousedown="keyLeft=true" onmouseup="keyLeft=false" onmouseout="keyLeft=false"></button>
-  <button type="button" id="right" onmousedown="keyRight=true" onmouseup="keyRight=false" onmouseout="keyRight=false"></button>
+  <button type="button" id="up" onmousedown="keyFaster=true" onmouseup="keyFaster=false" onmouseout="keyFaster=false" ontouchstart="keyFaster=true" ontouchend="keyFaster=false"></button>
+  <button type="button" id="down" onmousedown="keySlower=true" onmouseup="keySlower=false" onmouseout="keySlower=false" ontouchstart="keySlower=true" ontouchend="keySlower=false"></button>
+  <button type="button" id="left" onmousedown="keyLeft=true" onmouseup="keyLeft=false" onmouseout="keyLeft=false" ontouchstart="keyLeft=true" ontouchend="keyLeft=false"></button>
+  <button type="button" id="right" onmousedown="keyRight=true" onmouseup="keyRight=false" onmouseout="keyRight=false" ontouchstart="keyRight=true" ontouchend="keyRight=false"></button>
   <!-----------------virtual button---------------------->
   <audio id='music'>
     <source src="music/racer.ogg">
