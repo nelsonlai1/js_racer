@@ -105,9 +105,6 @@
 	try{ document.createEvent("TouchEvent"); return true; }
 	catch(e){ return false;}
 	}
-	if(isMobile()){
-		alert("mobile");	
-	}
 	window.addEventListener("orientationchange",onOrientationchange ,false);
 	function onOrientationchange() {
       if (window.orientation === 180 || window.orientation === 0) {
