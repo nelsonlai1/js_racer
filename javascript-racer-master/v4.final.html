@@ -111,11 +111,9 @@
 	window.addEventListener("orientationchange",onOrientationchange ,false);
 	function onOrientationchange() {
       if (window.orientation === 180 || window.orientation === 0) {
-            alert("portrait");
+		var locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
+		locOrientation('landscape');
       }
-      if (window.orientation === 90 || window.orientation === -90 ){
-            alert("landscape");
-      } 
 	}
 ////////////////////////////API///////////////////////////////////
 
