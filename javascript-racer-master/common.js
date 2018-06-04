@@ -411,21 +411,3 @@ SPRITES.SCALE = 0.3 * (1/SPRITES.PLAYER_STRAIGHT.w) // the reference sprite widt
 SPRITES.BILLBOARDS = [SPRITES.BILLBOARD01, SPRITES.BILLBOARD02, SPRITES.BILLBOARD03, SPRITES.BILLBOARD04, SPRITES.BILLBOARD05, SPRITES.BILLBOARD06, SPRITES.BILLBOARD07, SPRITES.BILLBOARD08, SPRITES.BILLBOARD09];
 SPRITES.PLANTS     = [SPRITES.TREE1, SPRITES.TREE2, SPRITES.DEAD_TREE1, SPRITES.DEAD_TREE2, SPRITES.PALM_TREE, SPRITES.BUSH1, SPRITES.BUSH2, SPRITES.CACTUS, SPRITES.STUMP, SPRITES.BOULDER1, SPRITES.BOULDER2, SPRITES.BOULDER3];
 SPRITES.CARS       = [SPRITES.CAR01, SPRITES.CAR02, SPRITES.CAR03, SPRITES.CAR04, SPRITES.SEMI, SPRITES.TRUCK];
-////////////////////////////API///////////////////////////////////
-function isMobile() {
-  try{ document.createEvent("TouchEvent"); return true; }
-  catch(e){ return false;}
-}
-if(!isMobile()){
-	alert("mobile");
-}
-window.addEventListener("orientationchange",onOrientationchange ,false);
-   function onOrientationchange() {
-      if (window.orientation === 180 || window.orientation === 0) {
-            alert("portrait");
-      }
-      if (window.orientation === 90 || window.orientation === -90 ){
-            alert("landscape");
-      } 
-   }
-////////////////////////////API///////////////////////////////////
