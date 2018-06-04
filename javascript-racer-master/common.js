@@ -416,20 +416,16 @@ function isMobile() {
   try{ document.createEvent("TouchEvent"); return true; }
   catch(e){ return false;}
 }
-<<<<<<< HEAD
 if(!isMobile()){
 	alert("mobile");
 }
-=======
->>>>>>> parent of 7eb0cb6... .
-window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
-        if (window.orientation === 180 || window.orientation === 0) {
-            alert('目前您的螢幕為縱向！');
-        }
-        if (window.orientation === 90 || window.orientation === -90 ){
-            alert('目前您的螢幕為橫向！');
-        } 
-    }, false);
-
-
+window.addEventListener("orientationchange",onOrientationchange ,false);
+   function onOrientationchange() {
+      if (window.orientation === 180 || window.orientation === 0) {
+            alert("portrait");
+      }
+      if (window.orientation === 90 || window.orientation === -90 ){
+            alert("landscape");
+      } 
+   }
 ////////////////////////////API///////////////////////////////////
