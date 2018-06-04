@@ -416,14 +416,14 @@ function isMobile() {
   try{ document.createEvent("TouchEvent"); return true; }
   catch(e){ return false;}
 }
-if(isMobile()){
-window.addEventListener("orientationchange",onOrientationchange ,false);
-   function onOrientationchange() {
-      if (window.orientation === 180 || window.orientation === 0) {
-		 var locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
-		 locOrientation('landscape');  
-      }
-   }
-}
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+        if (window.orientation === 180 || window.orientation === 0) {
+            alert('目前您的螢幕為縱向！');
+        }
+        if (window.orientation === 90 || window.orientation === -90 ){
+            alert('目前您的螢幕為橫向！');
+        } 
+    }, false);
+
 
 ////////////////////////////API///////////////////////////////////
