@@ -416,7 +416,7 @@ function isMobile() {
   try{ document.createEvent("TouchEvent"); return true; }
   catch(e){ return false;}
 }
-if(isMobile()){
+if(!isMobile()){
 	alert("mobile");
 }
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
