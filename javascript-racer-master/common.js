@@ -416,14 +416,14 @@ function isMobile() {
   try{ document.createEvent("TouchEvent"); return true; }
   catch(e){ return false;}
 }
+if(isMobile()){
 window.addEventListener("orientationchange",onOrientationchange ,false);
    function onOrientationchange() {
       if (window.orientation === 180 || window.orientation === 0) {
-         if(isMobile()){
 		 locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
-		 locOrientation('landscape');
-		 }    
+		 locOrientation('landscape');  
       }
    }
+}
 
 ////////////////////////////API///////////////////////////////////
