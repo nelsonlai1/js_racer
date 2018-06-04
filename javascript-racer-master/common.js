@@ -420,7 +420,7 @@ if(isMobile()){
 window.addEventListener("orientationchange",onOrientationchange ,false);
    function onOrientationchange() {
       if (window.orientation === 180 || window.orientation === 0) {
-		 locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
+		 let locOrientation = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation || screen.orientation.lock;
 		 locOrientation('landscape');  
       }
    }
