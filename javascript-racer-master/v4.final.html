@@ -105,6 +105,13 @@
 	try{ document.createEvent("TouchEvent"); return true; }
 	catch(e){ return false;}
 	}
+	if(isMoblie()==true)
+	{
+		document.getElementById("up").style.display="block";
+		document.getElementById("down").style.display="block";
+		document.getElementById("left").style.display="block";
+		document.getElementById("right").style.display="block";
+	}
 	window.addEventListener("orientationchange",onOrientationchange ,false);
 	function onOrientationchange() {
       if (window.orientation === 180 || window.orientation === 0) {
